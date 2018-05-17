@@ -2,10 +2,11 @@
 	padding:0;
 	margin:0;
 	box-sizing:border-box;
+	top:0;
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Arimo';
 }
 
 	section{
@@ -13,50 +14,102 @@ body {
 	}
 
 	section#bio {
-		background-color: #1a9ae2;
+
+		background-image: url("../images/wall3.png");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
 		position: relative;
 	}
 
-	section#bio a{
-		color: lightgrey;
-	}
+		section#bio > div {
+			background-color: rgb(15,6,24,0.8);
+			width: 100%;
+			height: 100vh;
+		}
 
-	section#bio > div#details > img{
+
+		section#bio a{
+			color: white;
+		}
+
+		section#bio > header {
+			position: relative;
+		}
+
+			section#bio > div > header > p {
+				padding: 15px 15px 0 15px;
+			}
+
+			section#bio > div > header > p > a {
+				text-decoration: none;
+			}
+
+				section#bio > div > header > p > a:hover {
+					text-decoration: underline;
+					cursor: pointer;
+					color: black;
+				}
+		
+				section#bio > div > header > p:last-child {
+					position: absolute;
+					right: 0;
+				}
+
+	section#bio > div > div#details > img{
 		border-radius: 50%;
-		width: 200px;
+		width: 300px;
 		border: 3px solid white;
 		padding: 2px;
+		cursor: pointer;
+
 	}
 
 		div#details {
-			border: 1px solid white;
 			width: 50%;
 			text-align: center;
 			padding: 15px;
 			position: absolute;
-			top: 0;
+			top: 0px;
 			left: 0;
 			transform: translate(50%, 50%);
+			font-family: DejaVu Sans;
+			color: white;
+			margin-top: -200px;
 		}
 
-		section#bio > div#details > h1,
-		section#bio > div#details > ul {
-			font-family: 'Nanum Pen Script', cursive;
+		section#bio > div > div#details > h1 {
+			font-family: 'Arial', cursive;
+			font-size: 30px;
+			color:black;
+			margin-top: 30px;
+			margin-bottom: 50px;
+			color: white;
+		}
+
+		section#bio > div > div#details > ul {
+			font-family: 'Segoe UI', cursive;
 			padding-top: 15px;
 			padding-bottom: 15px;
+			text-decoration: none;
+
 		}
 
-		section#bio > div#details > h1 {
-			font-size: 30px;
-		}
-
-		section#bio > div#details > ul{
+		section#bio > div >  div#details > ul{
 			list-style: none;
-			font-size: 15px;
+			font-size: 25spx;
+			font-family: Segoe UI;
+			margin-top: -30px;
+			margin-bottom: 10px;
+		}
+
+		section#bio > div#details > p {
+			line-height: 1;
+			font-family: Arial;
 		}
 
 		section#projects	{
-			background-color: #748c06;
+			background-color: white;
 		}
 		section#skillset	{
 			background-color: #d18000;
